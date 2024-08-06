@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin: 20px 100px;
+  border-bottom: 2px solid grey;
+
+  .nav-logo {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    li {
+      list-style: none;
+    }
+    a {
+      color: black;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 300px 0;
+  height: 70vh;
+  gap: 120px;
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    img {
+      border-radius: 40px;
+      height: 90%;
+    }
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    p {
+      width: 80%;
+      margin-bottom: 40px;
+    }
+    .p-companyname {
+      color: #ef9c62;
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .p-name {
+      font-weight: 700;
+      font-size: 45px;
+    }
+    .p-description {
+      color: #989898;
+      font-size: 18px;
+      font-family: sans-serif;
+    }
+    .p-price {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .p-mrp {
+      font-size: 22px;
+      font-weight: 600;
+      color: #989898;
+      text-decoration: line-through;
+    }
+    .p-addtocartbtn {
+      background-color: #ff7d1b;
+      color: white;
+      border: none;
+      outline: none;
+      height: 50px;
+      width: 50%;
+      border-radius: 7px;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: serif;
+      cursor: pointer;
+      box-shadow: #ff7d1b 0px 8px 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    height: 60px;
+    margin: 15px 90px;
+    gap: 100px;
+    .nav-logo {
+      font-size: 31px;
+    }
+    a {
+      font-size: 19px;
+    }
+  }
+  .container {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    .image-container {
+      height: 85%;
+    }
+    .info-container {
+      p {
+        width: 100%;
+      }
+      .p-companyname {
+        font-size: 21px;
+      }
+      .p-name {
+        font-size: 43px;
+      }
+      .p-description {
+        font-size: 17px;
+      }
+      .p-price,
+      .p-mrp {
+        font-size: 21px;
+      }
+      .p-addtocartbtn {
+        width: 70%;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    height: 55px;
+    margin: 10px 70px;
+    .nav-logo {
+      font-size: 28px;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+  .container {
+    margin-left: 9vw;
+    margin-right: 9vw;
+    gap: 70px;
+    .image-container {
+      height: 70%;
+    }
+    .info-container {
+      p {
+        width: 100%;
+      }
+      .p-companyname {
+        font-size: 19px;
+      }
+      .p-name {
+        font-size: 35px;
+      }
+      .p-description {
+        font-size: 16px;
+      }
+      .p-price,
+      .p-mrp {
+        font-size: 19px;
+      }
+      .p-addtocartbtn {
+        height: 40px;
+        width: 80%;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    height: 50px;
+    margin: 5px 50px;
+    .nav-logo {
+      font-size: 25px;
+    }
+    a {
+      font-size: 17px;
+    }
+  }
+  .container {
+    position: relative;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    gap: 30px;
+    flex-direction: column;
+    .image-container {
+      height: 60%;
+    }
+    .info-container {
+      p {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .p-companyname {
+        font-size: 17px;
+      }
+      .p-name {
+        font-size: 25px;
+      }
+      .p-description {
+        font-size: 16px;
+      }
+      .p-price,
+      .p-mrp {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+      .p-addtocartbtn {
+        height: 35px;
+        width: 50%;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    height: 40px;
+    margin: 2px 20px;
+    justify-content: space-between;
+    gap: 0;
+    .nav-menu {
+      gap: 20px;
+    }
+    .nav-logo {
+      font-size: 22px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+  .container {
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 30px;
+    flex-direction: column;
+    .image-container {
+      height: 70%;
+    }
+    .info-container {
+      p {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .p-companyname {
+        font-size: 17px;
+      }
+      .p-name {
+        font-size: 22px;
+      }
+      .p-description {
+        font-size: 16px;
+      }
+      .p-price,
+      .p-mrp {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+      .p-addtocartbtn {
+        height: 35px;
+        width: 50%;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    height: 38px;
+    margin: 2px 20px;
+    justify-content: space-between;
+    gap: 0;
+    .nav-menu {
+      gap: 12px;
+      a {
+        font-size: 16px;
+      }
+    }
+    .nav-logo {
+      font-size: 21px;
+    }
+  }
+  .container {
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 30px;
+    flex-direction: column;
+    .image-container {
+      height: 60%;
+    }
+    .info-container {
+      p {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .p-companyname {
+        font-size: 17px;
+      }
+      .p-name {
+        font-size: 22px;
+      }
+      .p-description {
+        font-size: 16px;
+      }
+      .p-price,
+      .p-mrp {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+      .p-addtocartbtn {
+        height: 35px;
+        width: 50%;
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
